@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import { Redirect, useHistory } from "react-router-dom"
+import { Redirect, useHistory,Link } from "react-router-dom"
 import Navbar from '../Navbar/Navbar_Main';
 import navlogo from "../Navbar/logo_react.png";
 
@@ -32,8 +32,10 @@ function Dashboard() {
                             <div class="card-body">
                                 <hr/>
                                 <div className='text-center'>
-                                <h5 class="card-title">Tutorial 1</h5>
-                                    <button type="button" class="btn btn-primary">Tutorial 1</button>
+                                <h5 class="card-title">TODO LIST</h5>
+                                    <button type="button" class="btn btn-primary">
+                                        <Link to="/TODO_LIST" style={{color:'white'}} >GOTO</Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>

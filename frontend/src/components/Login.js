@@ -44,7 +44,7 @@ export default class Login extends React.Component {
     }
 
     render() {
-        if (this.state.loggedIn === true) {
+        if (this.state.loggedIn === false) {
             return <Redirect to="/user" />
         }
         return (
